@@ -47,19 +47,19 @@ header {
 }
 
 .btnHamburguesa .bar{
-    top: 8px;
+    top: 9px;
     background: #fff;
-    width: 70%;
+    width: 60%;
     height: 3px;
     transition: all .3s ease-in;
 }
 
 #bar2{
-    top: 16px;
+    top: 18px;
 }
 
 #bar3{
-    top: 24px;
+    top: 27px;
 }
 
 .navigation.active{
