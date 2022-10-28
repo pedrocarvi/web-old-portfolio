@@ -36,7 +36,7 @@ document.querySelector('.SphereResponsive').style.color = color;
 var tagCloud = TagCloud('.SphereResponsive', Texts, {
 
     // Sphere radius in px
-    radius: 200,
+    radius: 180,
 
     // animation speed slow, normal, fast
     maxSpeed: 'normal',

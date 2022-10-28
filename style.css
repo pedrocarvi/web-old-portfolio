@@ -622,6 +622,22 @@ footer h3 {
 
 
 @media screen and (max-width: 850px) {
+    * {
+        cursor: auto;
+    }
+
+    .cursor-inner {
+        display: none;
+    }
+    .cursor-inner.black {
+        display: none;
+    }
+    .cursor-outer.black {
+        display: none;
+    }
+    .cursor-outer {
+        display: none;
+    }
     .sobremi-content {
         display: flex;
         flex-direction: column;
@@ -656,21 +672,30 @@ footer h3 {
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        gap: 10px;
+        gap: 15px;
         background-color: #080808;
         color: white;
         border-radius: 10px;
+        flex-wrap: wrap;
     }
     .card-mobile img {
         width: 100%;
         border-radius: 10px;
     }
     .card-mobile p, .card-mobile h3 {
-        margin-left: 8px;
+        margin-left: 12px;
+    }
+    .card-mobile h3 {
+        font-size: 1.2rem;
+    }
+    .card-mobile p {
+        font-size: 0.95rem;
     }
     .enlacesMobile {
-        margin-left: 8px;
-        margin-bottom: 10px;
+        margin-left: 12px;
+        margin-bottom: 20px;
     }
+
+
     
 }
