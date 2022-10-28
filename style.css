@@ -589,7 +589,7 @@ footer h3 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         gap: 15px;
     }
 
@@ -664,7 +664,6 @@ footer h3 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 30px;
     }
     .card-mobile {
         width: 90vw;
@@ -677,6 +676,7 @@ footer h3 {
         color: white;
         border-radius: 10px;
         flex-wrap: wrap;
+        margin: 15px auto;
     }
     .card-mobile img {
         width: 100%;
