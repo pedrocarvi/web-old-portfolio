@@ -676,7 +676,6 @@ footer h3 {
         color: white;
         border-radius: 10px;
         flex-wrap: wrap;
-        margin: 15px auto;
     }
     .card-mobile img {
         width: 100%;
@@ -696,6 +695,8 @@ footer h3 {
         margin-bottom: 20px;
     }
 
-
+    footer p {
+        font-size: 0.9rem;
+    }
     
 }
