@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title> Pedro Ignacio Carvi - Desarrollador Front End </title>
+</head>
+
+<body>
+
+    <!-- Header  -->
+    <header class="navigation black">
+        <button class="btnHamburguesa" onclick="show()">
+            <span id="bar1" class="bar"></span>
+            <span id="bar2" class="bar"></span>
+            <span id="bar3" class="bar"></span>
+        </button>
+
+        <nav class="navbar">
+            <ul class="navbar-menu ">
+                <li class="navbar-menu-item " onclick="funcionPrueba()"> <a href="#"> Inicio <span></span><span></span></a> </li>
+                <li class="navbar-menu-item " onclick="funcionPrueba()"> <a href="#proyectos"> Proyectos <span></span><span></span> </a> </li>
+                <li class="navbar-menu-item " onclick="funcionPrueba()"> <a href="#sobremi"> Sobre mi + CV <span></span><span></span> </a> </li>
+                <li class="navbar-menu-item " onclick="funcionPrueba()"> <a href="#contacto"> Contacto <span></span><span></span> </a> </li>
+                <!-- <li class="navbar-menu-item cvfile"> <a href="#"> Descargar Curriculum <span></span><span></span> </a> </li> -->
+            </ul>
+        </nav>
+
+        <div class="cursor-inner"></div>
+        <div class="cursor-outer"></div>
+    </header>
+
+    <!-- Sections -->
+    <main>
+        <section class="portada portada-desktop black ">
+            <div class="portada-redes">
+                <a href="https://github.com/pedrocarvi" target="_blank"><i class="fa-brands fa-github iconPortada icon-github iconhover"></i></a>
+                <a href="https://www.linkedin.com/in/pedro-ignacio-carvi/" target="_blank"><i class="fa-brands fa-linkedin-in iconPortada icon-linkedin iconhover"></i></a>
+            </div>
+            <div class="portada-info">
+                <h1 class="content"> ¡Hola! Mi nombre es Pedro Carvi </h1>
+                <p class="content"> desarrollador y diseñador Front End </p>
+            </div>
+            <div class="portada-skills">
+                <span class="Sphere"></span>
+            </div>
+        </section>
+
+        <section class="portada portada-mobile">
+            <div class="portada-info-mobile">
+                <h1 class="content"> ¡Hola! Mi nombre es Pedro Carvi </h1>
+                <p class="content"> desarrollador y diseñador Front End </p>
+            </div>
+            <div class="portada-skills-mobile">
+                <span class="SphereResponsive"></span>
+            </div>
+        </section>
+
+        <div class="portada-redes-mobile">
+            <a href="https://github.com/pedrocarvi" target="_blank"><i class="fa-brands fa-github iconPortada icon-github"></i></a>
+            <a href="https://www.linkedin.com/in/pedro-ignacio-carvi/" target="_blank"><i class="fa-brands fa-linkedin-in iconPortada icon-linkedin"></i></a>
+        </div>
+
+        <section class="proyectos proyectos-desktop" id="proyectos">
+            <h2> Proyectos </h2>
+            <div class="card card1 black">
+                <div class="card-content">
+                    <h3 class="card-title"> Rhino Equipment </h3>
+                    <div class="card-body">
+                        <p> Maquetado de sitio web de venta de equipamiento de gimnasio. </p>
+                        <p> <span class="card-body-herramientas"> Herramientas utilizadas:</span> Javascript - Html -
+                            Scss - Bootstrap </p>
+                    </div>
+                    <a href="#" class="button button1"> <i class="fa-brands fa-github"> </i> Github </a>
+                    <a href="#" class="button"> <i class="fa-sharp fa-solid fa-laptop"> </i> Demo </a>
+                </div>
+            </div>
+
+            <div class="card card2 black">
+                <div class="card-content">
+                    <h3 class="card-title"> Florida Frutas Secas </h3>
+                    <div class="card-body">
+                        <p> Ecommerce para la dietetica Florida Frutas Secas, ubicada en Rosario, Santa Fe, Argentina.
+                        </p>
+                        <p> <span class="card-body-herramientas"> Herramientas utilizadas:</span> Wordpress - Css -
+                            Javascript </p>
+                    </div>
+                    <a href="#" class="button  button1"> <i class="fa-brands fa-github"> </i> Github </a>
+                    <a href="#" class="button"> <i class="fa-sharp fa-solid fa-laptop"> </i> Demo </a>
+                </div>
+            </div>
+
+            <div class="card card3 black">
+                <div class="card-content">
+                    <h3 class="card-title"> Administrador de Contraseñas </h3>
+                    <div class="card-body">
+                        <p> Programa para guardar tus contraseñas de manera segura. </p>
+                        <p><span class="card-body-herramientas"> Herramientas utilizadas:</span> Python - Cryptography,
+                            Fernet </p>
+                    </div>
+                    <a href="#" class="button  button1"> <i class="fa-brands fa-github"> </i> Github </a>
+                    <a href="#" class="button"> <i class="fa-sharp fa-solid fa-laptop"> </i> Demo </a>
+                </div>
+            </div>
+
+            <div class="card card4 black">
+                <div class="card-content card-content-desktop">
+                    <h3 class="card-title"> Ecommerce </h3>
+                    <div class="card-body">
+                        <p> Sistema modelo de Ecommerce </p>
+                        <p><span class="card-body-herramientas"> Herramientas utilizadas:</span> MERN Stack (MongoDB , Express , React.js , Node.js) </p>
+                    </div>
+                    <a href="#" class="button  button1"> <i class="fa-brands fa-github"> </i> Github </a>
+                    <a href="#" class="button"> <i class="fa-sharp fa-solid fa-laptop"> </i> Demo </a>
+                </div>
+            </div>
+        </section>
+       
+        <!-- PROYECTOS RESPONSIVE ----
+        ----------------------
+        ------------------------- --
+        ------------------------>
+
+        <section class="proyectos proyectos-mobile" id="proyectos">
+            <h2> Proyectos </h2>
+
+            <div class="card-mobile black">
+                <img src="./1.jpg" alt="rhinoEquipImg" width="400">
+                <h3 class="card-title"> Rhino Equipment </h3>
+                <p> Maquetado de sitio web de venta de equipamiento de gimnasio. </p>
+                <p> <span class="card-body-herramientas"> Herramientas utilizadas:</span> Javascript - Html -
+                    Scss - Bootstrap 
+                </p>
+                <div class="enlacesMobile">
+                    <a href="#" class="button button1"> <i class="fa-brands fa-github"> </i> Github </a>
+                    <a href="#" class="button"> <i class="fa-sharp fa-solid fa-laptop"> </i> Demo </a>
+                </div>    
+            </div>
+            
+            <div class="card-mobile black">
+                <img src="./3.jpg" alt="floridaFrutasSecasImg">
+                <h3 class="card-title"> Florida Frutas Secas </h3>
+                <p> Ecommerce para la dietetica Florida Frutas Secas, ubicada en Rosario, Santa Fe, Argentina. </p>
+                <p> <span class="card-body-herramientas"> Herramientas utilizadas:</span> Wordpress - Css -
+                    Javascript </p>
+                <div class="enlacesMobile">
+                    <a href="#" class="button button1"> <i class="fa-brands fa-github"> </i> Github </a>
+                    <a href="#" class="button"> <i class="fa-sharp fa-solid fa-laptop"> </i> Demo </a>
+                </div>    
+            </div>
+
+            <div class="card-mobile black">
+                <img src="./2.jpg" alt="floridaFrutasSecasImg" width="400">
+                <h3 class="card-title"> Administrador de contraseñas </h3>
+                <p> Programa para guardar tus contraseñas de manera segura. </p>
+                        <p><span class="card-body-herramientas"> Herramientas utilizadas:</span> Python - Cryptography,
+                            Fernet </p>
+                <div class="enlacesMobile">
+                    <a href="#" class="button button1"> <i class="fa-brands fa-github"> </i> Github </a>
+                    <a href="#" class="button"> <i class="fa-sharp fa-solid fa-laptop"> </i> Demo </a>
+                </div>    
+            </div>
+
+            <div class="card-mobile black">
+                <img src="./4.jpg" alt="floridaFrutasSecasImg" width="400">
+                <h3 class="card-title"> Ecommerce </h3>
+                <p> Sistema modelo de Ecommerce </p>
+                        <p><span class="card-body-herramientas"> Herramientas utilizadas:</span> MERN Stack (MongoDB , Express , React.js , Node.js) </p>
+                <div class="enlacesMobile">
+                    <a href="#" class="button button1"> <i class="fa-brands fa-github"> </i> Github </a>
+                    <a href="#" class="button"> <i class="fa-sharp fa-solid fa-laptop"> </i> Demo </a>
+                </div>    
+            </div>
+        </section>
+
+        <section class="sobre-mi" id="sobremi">
+
+            <h2> Sobre mi </h2>
+            <div class="sobremi-content">
+                <img src="./Senda.jpg" alt="foto" width="300">
+
+            <div class="sobremi-texto">
+                <p> <span> ¡Hola! Soy Pedro, </span> desarrollador front-end y estudiante de Tecnicatura en Programacion
+                    en la Universidad Austral de Rosario.</p>
+                <p> Como desarrollador Front End, disfruto mucho el proceso de diseñar y maquetar la interfaz de usuario de las aplicaciones web. Me gusta crear y/o diseñar aplicaciones simples , interactivas e intuitivas para asi proveer una buena experiencia al usuario. </p>
+                <p> Actualmente, estoy aprendiendo el stack de tecnologias MERN para poder desarrollar aplicaciones web
+                    desde el back-end y el front-end.</p>
+
+                <a href="./Currículum.pdf" target="_blank" class="descargarCvBtn black"> Descargar CV</a>
+            </div>
+            </div>
+            
+        </section>
+    
+
+    </main>
+
+    <footer class="black" id="contacto">
+        <h3> Contacto </h3>
+        <div class="footer-redes">
+            <a href="mailto:pedro.carvi-11@outlook.es"><img src="./mail.png" alt="mail-icon" class="mail-icon"></a>
+            <a href="https://www.linkedin.com/in/pedro-ignacio-carvi/" target="_blank"><img src="./linkedin.png" alt="linkedin-icon" class="linkedin-icon"></a>
+        </div>
+        <p> Copyrigth 2022 - Pedro Carvi - <a href="mailto:pedro.carvi-11@outlook.es" class="footer-mail">
+                pedro.carvi-11@outlook.es </a> </p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
+    <script src="https://kit.fontawesome.com/1ab2e2c579.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
