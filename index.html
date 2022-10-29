@@ -14,15 +14,18 @@
     <!-- Header  -->
     <header class="navigation black">
         <button class="btnHamburguesa" onclick="show()">
-            <span id="bar1" class="bar"></span>
-            <span id="bar2" class="bar"></span>
-            <span id="bar3" class="bar"></span>
+                <span id="bar1" class="bar"></span>
+                <span id="bar2" class="bar"></span>
+                <span id="bar3" class="bar"></span>
         </button>
 
         <nav class="navbar">
             <ul class="navbar-menu ">
                 <li class="navbar-menu-item " onclick="funcionPrueba()"> <a href="#"> Inicio <span></span><span></span></a> </li>
-                <li class="navbar-menu-item " onclick="funcionPrueba()"> <a href="#proyectos"> Proyectos <span></span><span></span> </a> </li>
+                <li class="navbar-menu-item menu-item-desktop " onclick="funcionPrueba()"> <a href="#proyectos"> Proyectos <span></span><span></span> </a> </li>
+                
+                <li class="navbar-menu-item menu-item-mobile" onclick="funcionPrueba()"> <a href="#proyectosMobile"> Proyectos <span></span><span></span> </a> </li>
+
                 <li class="navbar-menu-item " onclick="funcionPrueba()"> <a href="#sobremi"> Sobre mi + CV <span></span><span></span> </a> </li>
                 <li class="navbar-menu-item " onclick="funcionPrueba()"> <a href="#contacto"> Contacto <span></span><span></span> </a> </li>
                 <!-- <li class="navbar-menu-item cvfile"> <a href="#"> Descargar Curriculum <span></span><span></span> </a> </li> -->
@@ -122,7 +125,7 @@
         ------------------------- --
         ------------------------>
 
-        <section class="proyectos proyectos-mobile" >
+        <section class="proyectos proyectos-mobile" id="proyectosMobile" >
             <h2> Proyectos </h2>
 
             <div class="card-mobile black">
